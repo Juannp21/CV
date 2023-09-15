@@ -7,32 +7,45 @@ li{
 }
 #Encabezadoprincipal{color: rgba(43, 38, 38, 1);
 font-size: xx-large;
+font-style: italic;
+margin: 0px;
 }
+#textop{color: rgba(43, 38, 38, 1);
+    font-size: large;
+    font-style: italic;
+    margin: 0px;}
+
+
 #Encabezadosecundario{
     color: rgba(43, 38, 38, 1);
     font-size: x-large;
+    font-style: italic;
+    margin: 0px;
+    ;
+    
 }
 h1{color: rgba(43, 38, 38, 1);} 
 
 .parrafos{
     background-color: rgba(43, 38, 38, 1);
-    margin: 15px;
+    margin: 12px;
     border: solid 2px;
-    padding: 15px;
-    border-radius: 10px;
-
-
-
+    padding: 14px;
+    border-radius: 10px;    
 
 }
 .colorparrafos{
-    color: rgba(154, 154, 154, 1);
+    color: rgba(217, 217, 217, 1);
+    text-shadow: 3px;
+    
+        
 }
 .foto{
     border: solid 1px;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 5px;
     background-color: rgba(105, 105, 101, 0.212);
+    
     
     
 }
@@ -54,7 +67,7 @@ h1{color: rgba(43, 38, 38, 1);}
     display: flex; 
 }
 .boton{
-    color: rgb(0, 0, 0);
+    color: rgba(217, 217, 217, 1);
     width: 250px;
     height: 58px;
     flex-shrink: 0;
@@ -63,4 +76,8 @@ h1{color: rgba(43, 38, 38, 1);}
 .menu{
 background-color: rgba(26, 87, 114, 1);
 display: flex;
+}
+.textocentral{
+    background-color: rgba(217, 217, 217, 1);
+    
 }
