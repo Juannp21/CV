@@ -14,14 +14,12 @@ header {
     align-items: center;
     padding: 10px;
 }
-
 .menu {
     display: flex;
     flex-wrap: wrap;
         align-items: center; 
     padding: 10px; 
 }
-
 .menu h1 {
     color: rgba(43, 38, 38, 1);
     font-size: 2em;
@@ -36,7 +34,6 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-
 .text {
     background-color: rgba(217, 217, 217, 1);
     padding-block: 10px;
@@ -45,11 +42,9 @@ header {
     margin: 0;
     border-radius: 10px;
 }
-
 .image {
     margin-right: 20px;
 }
-
 .image img {
     width: 100%;
     height: auto;
@@ -57,7 +52,6 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-
 /* Estilos para los párrafos */
 p {
     color: rgba(43, 38, 38, 1);
@@ -67,17 +61,14 @@ p {
     margin-left: 15px;
     
 }
-
 /* Estilos para los enlaces */
 .parrafos a {
     color: rgba(217, 217, 217, 1);
     text-decoration: none;
 }
-
 .parrafos a:hover {
     text-decoration: underline;
 }
-
 /* Pie de página */
 .contenedorparrafo {
     display: flex;
@@ -86,15 +77,12 @@ p {
     justify-content: center;
     padding: 35px;
 }
-
 .contenedorparrafo p {
     margin: 4px;
 }
-
 .boton {
     margin: 4px;
 }
-
 .boton a {
     width: 250px;
     height: 30px;
