@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Juan Pablo Alves Mendes</title>
     <link rel="stylesheet" href="estilo.css">
+    <script>
+        var currentPage = location.pathname.split('/').pop();
+        var navLinks = document.querySelectorAll('.menu a');
+
+        for (var i = 0; i < navLinks.length; i++) {
+            if (navLinks[i].getAttribute('href') === currentPage) {
+                navLinks[i].classList.add('activo');
+            }
+        }
+    </script>
+    <!-- JavaScript para cambiar el tema -->
+    <script src="java.js"></script>
 </head>
 <body>
 
     <header>
         <h1 id="Encabezadoprincipal" class="menu">CV Juan Pablo Alves Mendes</h1>
+        <!-- Botón para Cambiar Tema -->
+        <button class="cambiar-tema" onclick="cambiarTema()">Modo Oscuro</button>
         <nav class="menu">
             <div class="boton">
                 <a href="index.html"><li class="parrafos colorparrafos"> Inicio </li></a>
@@ -36,17 +50,34 @@
               <img src="img/foto2.jpg" alt="TFoto">
             </div>
             <div class="text">
-                
-                <p>Nombre: Juan Pablo Alves Mendes</p>
-                <p>Documento de Identidad: 44.413.217</p>
-                <p>Dirección: Asuncion 6046</p>
-                <p>Número de Teléfono: 11 5156-5326</p>
-                <p>Correo Electrónico: jalvesmendes@uade.edu.ar</p>
-                <p>Nacionalidad: Argentino</p>
-                
+                <ul class="estudios-lista">
+                    <li>Nombre: Juan Pablo Alves Mendes</li>
+                    <li>Documento de Identidad: 44.413.217</li>
+                    <li>Dirección: Asuncion 6046</li>
+                    <li>Número de Teléfono: 11 5156-5326</li>
+                    <li>Correo Electrónico: jalvesmendes@uade.edu.ar</li>
+                    <li>Nacionalidad: Argentino</li>
+                </ul>
             </div>
         </div>
     </main>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="menu">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </section>
 
     <footer class="contenedorparrafo">
         <p class="parrafos"><a href="https://www.linkedin.com/in/juan-pablo-alves-mendes-50520227a/" target="_blank" class="colorparrafos">Linkedin</a></p>

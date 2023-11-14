@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Juan Pablo Alves Mendes</title>
     <link rel="stylesheet" href="estilo.css">
+
+    <!-- JavaScript para la barra de navegación activa -->
+    <script>
+        var currentPage = location.pathname.split('/').pop();
+        var navLinks = document.querySelectorAll('.menu a');
+
+        for (var i = 0; i < navLinks.length; i++) {
+            if (navLinks[i].getAttribute('href') === currentPage) {
+                navLinks[i].classList.add('activo');
+            }
+        }
+    </script>
+    <!-- JavaScript para cambiar el tema -->
+    <script src="java.js"></script>
+
 </head>
 <body>
 
     <header>
         <h1 id="Encabezadoprincipal" class="menu">CV Juan Pablo Alves Mendes</h1>
+        <!-- Botón para Cambiar Tema -->
+        <button class="cambiar-tema" onclick="cambiarTema()">Modo Oscuro</button>
         <nav class="menu">
             <div class="boton">
                 <a href="index.html"><li class="parrafos colorparrafos"> Inicio </li></a>
@@ -33,7 +50,7 @@
     <main>
         <div class="container">
             <div class="image">
-              <img src="img/foto2.jpg" alt="Foto">
+                <img src="img/foto2.jpg" alt="Foto">
             </div>
             <div class="text">
                 <p>Soy un estudiante apasionado de Desarrollo de Software, con una sólida comprensión de los principios y tecnologías fundamentales.</p>
@@ -50,5 +67,6 @@
 
 </body>
 </html>
+
 
 
